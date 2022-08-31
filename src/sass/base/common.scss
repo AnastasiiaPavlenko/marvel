@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+$body-bg: #121111;

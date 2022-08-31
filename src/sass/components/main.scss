@@ -1,0 +1,43 @@
+$header: 110px;
+$footer: 20px;
+
+.container-main {
+    width: 100%;
+    max-height: calc(100vh - (110px + 20px));
+    position: relative;
+}
+.table-container {
+    max-height: inherit;
+    p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    // Overriding material-table classes
+    #table {
+        .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .css-pdct74-MuiTablePagination-selectLabel,
+        .css-levciy-MuiTablePagination-displayedRows{
+            display: none; 
+        }
+        .css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+            margin-right: 0; 
+        }
+        .css-1q1u3t4-MuiTableRow-root .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+            padding-right: 0;
+            padding-left: 0;
+            width: 90%;
+        }
+    }   
+}
+
+@media (min-width: 768px) {
+    .container-main {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+}
